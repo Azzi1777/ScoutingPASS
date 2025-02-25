@@ -128,10 +128,6 @@ var config_data = `
       "code": "tps",
       "type": "counter"
     },
-     { "name": "Robot Throw",
-      "code": "tps",
-      "type": "counter"
-    },
     { "name": "Net Score",
       "code": "tns",
       "type": "counter"
