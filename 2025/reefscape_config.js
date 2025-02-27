@@ -136,9 +136,9 @@ var config_data = `
       "code": "tpu",
       "type": "radio",
       "choices": {
-        "s": "Coral Station<br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
+        "Coral": "Coral Station<br>",
+        "floor": "Floor<br>",
+        "both": "Both<br>",
         "x": "Not Attempted"
       },
       "defaultValue": "x"
@@ -157,10 +157,10 @@ var config_data = `
       "code": "efs",
       "type":"radio",
       "choices": {
-        "bp": "Parked<br>",
-        "ba": "Parked/Failed Climb<br>",
-        "bs": "Shallow Cage<br>",
-        "bd": "Deep Cage<br>",
+        "Prk": "Parked<br>",
+        "PrkF": "Parked/Failed Climb<br>",
+        "Shallow": "Shallow Cage<br>",
+        "DeepCage": "Deep Cage<br>",
         "x": "Not attempted"
       },
       "defaultValue": "x"
