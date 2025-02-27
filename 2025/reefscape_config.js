@@ -55,6 +55,7 @@ var config_data = `
       "min": 1,
       "max": 99999
     },
+    ],
   "auton": [
     { "name": "Leave Starting Line",
       "code": "al",
