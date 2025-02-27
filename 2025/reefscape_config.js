@@ -183,4 +183,4 @@ var config_data = `
       "type": "bool"
     }
   ]
-}`;
+}`
