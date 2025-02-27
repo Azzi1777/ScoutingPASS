@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "WATERLOO",
+      "defaultValue": "2025ilpe",
       "required": "true"
     },
     { "name": "Match Level",
@@ -116,7 +116,7 @@ var config_data = `
       "code": "tc3",
       "type": "counter"
     },
-    { "name": "Human Player throw",
+    { "name": "Coral L4",
       "code": "tc4",
       "type": "counter"
     },
@@ -178,10 +178,10 @@ var config_data = `
       "code": "ds",
       "type": "radio",
       "choices": {
-        "NE": "Not Effective<br>",
-        "AVE": "Average<br>",
-        "VE": "Very Effective<br>",
-        "X": "Not Observed"
+        "n": "Not Effective<br>",
+        "a": "Average<br>",
+        "v": "Very Effective<br>",
+        "x": "Not Observed"
       },
       "defaultValue": "x"
     },
@@ -189,13 +189,25 @@ var config_data = `
       "code": "dr",
       "type": "radio",
       "choices": {
-        "BELOWAVE": "Below Average<br>",
-        "AVE": "Average<br>",
-        "G": "Good<br>",
-        "E": "Excellent<br>",
-        "X": "Did not play defense"
+        "b": "Below Average<br>",
+        "a": "Average<br>",
+        "g": "Good<br>",
+        "e": "Excellent<br>",
+        "x": "Did not play defense"
       },
       "defaultValue": "x"
+    },
+    { "name": "Speed Rating",
+      "code": "sr",
+      "type": "radio",
+      "choices": {
+        "1": "1 (slow)<br>",
+        "2": "2<br>",
+        "3": "3<br>",
+        "4": "4<br>",
+        "5": "5 (fast)"
+      },
+      "defaultValue":"3"
     },
     { "name": "Died/Immobilized",
       "code": "die",
@@ -218,5 +230,11 @@ var config_data = `
       "code": "all",
       "type": "bool"
     },
+    { "name": "Comments",
+      "code": "co",
+      "type": "text",
+      "size": 15,
+      "maxSize": 55
+    }
   ]
 }`;
