@@ -125,11 +125,11 @@ var config_data = `
       "type": "counter"
     },
     { "name": "Processor Score",
-      "code": "tps",
+      "code": "tc6",
       "type": "counter"
     },
     { "name": "Net Score",
-      "code": "tns",
+      "code": "tc7",
       "type": "counter"
     },
     { "name": "Pickup From",
