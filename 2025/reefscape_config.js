@@ -121,7 +121,7 @@ var config_data = `
       "type": "counter"
     },
     { "name": "Human Player Throw",
-      "code": "tc4",
+      "code": "tc5",
       "type": "counter"
     },
     { "name": "Processor Score",
