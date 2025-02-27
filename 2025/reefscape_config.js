@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2025ilpe",
+      "defaultValue": "WATERLOO",
       "required": "true"
     },
     { "name": "Match Level",
@@ -120,6 +120,10 @@ var config_data = `
       "code": "tc4",
       "type": "counter"
     },
+    { "name": "Human Player Throw",
+      "code": "tc4",
+      "type": "counter"
+    },
     { "name": "Processor Score",
       "code": "tps",
       "type": "counter"
@@ -178,10 +182,10 @@ var config_data = `
       "code": "ds",
       "type": "radio",
       "choices": {
-        "n": "Not Effective<br>",
-        "a": "Average<br>",
-        "v": "Very Effective<br>",
-        "x": "Not Observed"
+        "NE": "Not Effective<br>",
+        "AVE": "Average<br>",
+        "VE": "Very Effective<br>",
+        "X": "Not Observed"
       },
       "defaultValue": "x"
     },
@@ -189,25 +193,13 @@ var config_data = `
       "code": "dr",
       "type": "radio",
       "choices": {
-        "b": "Below Average<br>",
-        "a": "Average<br>",
-        "g": "Good<br>",
-        "e": "Excellent<br>",
-        "x": "Did not play defense"
+        "B-AVE": "Below Average<br>",
+        "AVE": "Average<br>",
+        "G": "Good<br>",
+        "E": "Excellent<br>",
+        "X": "Did not play defense"
       },
       "defaultValue": "x"
-    },
-    { "name": "Speed Rating",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
-      },
-      "defaultValue":"3"
     },
     { "name": "Died/Immobilized",
       "code": "die",
@@ -229,12 +221,6 @@ var config_data = `
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
       "type": "bool"
-    },
-    { "name": "Comments",
-      "code": "co",
-      "type": "text",
-      "size": 15,
-      "maxSize": 55
     }
   ]
 }`;
