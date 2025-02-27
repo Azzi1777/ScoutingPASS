@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2025onwat",
+      "defaultValue": "WATERLOO",
       "required": "true"
     },
     { "name": "Match Level",
@@ -47,17 +47,6 @@ var config_data = `
         "r3": "Red-3",
         "b3": "Blue-3"
       },
-       { "name": "Robot",
-      "code": "r",
-      "type": "robot",
-      "choices": {
-        "r1": "Red-1",
-        "b1": "Blue-1<br>",
-        "r2": "Red-2",
-        "b2": "Blue-2<br>",
-        "r3": "Red-3",
-        "b3": "Blue-3"
-      },
       "required":"true"
     },
     { "name": "Team #",
@@ -66,7 +55,16 @@ var config_data = `
       "min": 1,
       "max": 99999
     },
-    ],
+    { "name": "Auto Start Position",
+      "code": "as",
+      "type": "clickable_image",
+      "filename": "2025/half_field.png",
+      "clickRestriction": "one",
+      "dimensions": "6 6",
+      "allowableResponses": "1 7 13 19 25 31",
+      "shape": "circle 5 black red true"
+    }
+  ],
   "auton": [
     { "name": "Leave Starting Line",
       "code": "al",
@@ -88,7 +86,7 @@ var config_data = `
       "code": "ac4",
       "type": "counter"
     },
-     { "name": "Auto Scoring Position",
+    { "name": "Auto Scoring Position",
       "code": "asp",
       "type": "clickable_image",
       "filename": "2025/reef.png",
@@ -118,20 +116,16 @@ var config_data = `
       "code": "tc3",
       "type": "counter"
     },
-    { "name": "Coral L4",
+    { "name": "Human Player throw",
       "code": "tc4",
       "type": "counter"
     },
     { "name": "Processor Score",
-      "code": "tc5",
-      "type": "counter"
-    },
-    { "name": "Human Player",
-      "code": "tc6",
+      "code": "tps",
       "type": "counter"
     },
     { "name": "Net Score",
-      "code": "tc7",
+      "code": "tns",
       "type": "counter"
     },
     { "name": "Pickup From",
@@ -180,6 +174,29 @@ var config_data = `
       "max": 9,
       "defaultValue": 0
     },
+    { "name": "Driver Skill",
+      "code": "ds",
+      "type": "radio",
+      "choices": {
+        "NE": "Not Effective<br>",
+        "AVE": "Average<br>",
+        "VE": "Very Effective<br>",
+        "X": "Not Observed"
+      },
+      "defaultValue": "x"
+    },
+    { "name": "Defense Rating",
+      "code": "dr",
+      "type": "radio",
+      "choices": {
+        "BELOWAVE": "Below Average<br>",
+        "AVE": "Average<br>",
+        "G": "Good<br>",
+        "E": "Excellent<br>",
+        "X": "Did not play defense"
+      },
+      "defaultValue": "x"
+    },
     { "name": "Died/Immobilized",
       "code": "die",
       "type": "bool"
@@ -200,6 +217,6 @@ var config_data = `
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
       "type": "bool"
-    }
+    },
   ]
 }`;
