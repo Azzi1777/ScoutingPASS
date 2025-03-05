@@ -22,9 +22,9 @@ var config_data = `
       "code": "l",
       "type": "level",
       "choices": {
-        "qm": "Quals<br>",
-        "sf": "Semifinals<br>",
-        "f": "Finals"
+        "Quals": "Quals<br>",
+        "Semifinal": "Semifinals<br>",
+        "Final": "Finals"
       },
       "defaultValue": "qm",
       "required": "true"
