@@ -157,8 +157,8 @@ var config_data = `
       "code": "efs",
       "type":"radio",
       "choices": {
-        "Prk": "Parked<br>",
-        "PrkF": "Parked/Failed Climb<br>",
+        "Park": "Parked<br>",
+        "ParkFailed": "Parked/Failed Climb<br>",
         "Shallow": "Shallow Cage<br>",
         "DeepCage": "Deep Cage<br>",
         "x": "Not attempted"
