@@ -13,11 +13,11 @@ var config_data = `
       "code": "drv",
       "type": "radio",
       "choices": {
-        "s": "Swerve<br>",
-        "w": "West Coast/Tank<br>",
-        "b": "Butterfly/Grashopper<br>",
-        "m": "Mechanum<br>",
-        "o": "Other"
+        "swerve": "Swerve<br>",
+        "west.coast": "West Coast/Tank<br>",
+        "butterfly": "Butterfly/Grashopper<br>",
+        "mechanum": "Mechanum<br>",
+        "other": "Other"
       },
       "defaultValue": "o"
     },
