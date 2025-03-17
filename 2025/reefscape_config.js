@@ -136,7 +136,7 @@ var config_data = `
       "code": "tpu",
       "type": "radio",
       "choices": {
-        "Coral": "Coral Station<br>",
+        "Coral": "Coral_Station<br>",
         "floor": "Floor<br>",
         "both": "Both<br>",
         "x": "Not Attempted"
